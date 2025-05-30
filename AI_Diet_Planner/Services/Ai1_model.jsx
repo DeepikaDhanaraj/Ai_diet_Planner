@@ -3,7 +3,7 @@ import axios from 'axios';
 
 const openai = new OpenAI({
   baseURL: "https://openrouter.ai/api/v1",
-  apiKey: "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", // ⚠️ Never expose this in production
+  apiKey: , // ⚠️ Never expose this in production
 });
 
 export const GenerateRecipesOptionAIModel = async (PROMPT) => {
@@ -50,7 +50,7 @@ export const GenerateRecipeImage=async(prompt) => await axios.post(BASE_URL+'/ap
         },
         {
             headers: {
-                'x-api-key': '8b2823c9-5017-4e88-a8ad-c6d3d44818de', // Your API Key
+                'x-api-key': , // Your API Key
                 'Content-Type': 'application/json', // Content Type
             },
         })
