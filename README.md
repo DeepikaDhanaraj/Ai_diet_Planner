@@ -99,3 +99,40 @@ npx convex dev
 # Start the Expo application
 npx expo start
 
+
+### 📱 APK File
+
+An APK file for Android devices is available for direct installation without the need to run the app via Expo.
+
+You can find the APK in the `release/` folder, ready to install on Android devices.
+
+## 🛠️ Build
+
+To generate the APK file for Android, follow these steps:
+
+1. Make sure you have all dependencies installed and the project configured properly (API keys, environment variables).
+
+2. Build a production-ready APK using Expo CLI:
+
+```bash
+expo build:android -t apk
+eas build -p android --profile production
+
+## 📚 Documentation Reference
+
+- **React Native & Expo**  
+  [React Native Documentation](https://reactnative.dev/docs/getting-started)  
+  [Expo Documentation](https://docs.expo.dev/)
+
+- **Firebase Authentication**  
+  [Firebase Auth Docs](https://firebase.google.com/docs/auth)
+
+- **Convex Backend**  
+  [Convex Documentation](https://docs.convex.dev/)
+
+- **OpenAI & AI Models**  
+  [OpenAI API Documentation](https://platform.openai.com/docs)  
+  [OpenRouter Documentation](https://docs.openrouter.ai/)
+
+- **AI Guru Lab Image Generation API**  
+  [Aigurulab API Docs](https://aigurulab.tech/documentation)
