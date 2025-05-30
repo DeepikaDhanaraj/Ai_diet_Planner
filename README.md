@@ -34,14 +34,14 @@
 
 ## 🛠️ Tech Stack
 
-| Category           | Technology                                                                 |
-|-------------------|------------------------------------------------------------------------------|
-| **Frontend**       | React Native, Expo, Expo Router                                              |
-| **Authentication** | Firebase Authentication                                                      |
-| **Backend & DB**   | Convex (Database & Serverless Functions)                                     |
-| **AI Models**      | GPT-3.5 Turbo & Google Gemini Flash via OpenRouter, AI Guru Lab (image API)  |
-| **State Management** | React Context API                                                        |
-| **UI Components**  | Custom Components, @expo/vector-icons, @hugeicons/react-native               |
+| Category            | Technology                                                                 |
+|--------------------|------------------------------------------------------------------------------|
+| **Frontend**        | React Native, Expo, Expo Router                                              |
+| **Authentication**  | Firebase Authentication                                                      |
+| **Backend & DB**    | Convex (Database & Serverless Functions)                                     |
+| **AI Models**       | GPT-3.5 Turbo & Google Gemini Flash via OpenRouter, AI Guru Lab (image API)  |
+| **State Management**| React Context API                                                            |
+| **UI Components**   | Custom Components, @expo/vector-icons, @hugeicons/react-native               |
 
 ---
 
@@ -72,6 +72,8 @@
 | `expo-env.d.ts`           | TypeScript definitions for environment variables                                    |
 | `README.md`               | Project documentation                                                               |
 
+---
+
 ## 📦 Installation & Setup
 
 ```bash
@@ -98,25 +100,33 @@ npx convex dev
 
 # Start the Expo application
 npx expo start
+```
 
+---
 
-### 📱 APK File
+## 📱 APK File
 
 An APK file for Android devices is available for direct installation without the need to run the app via Expo.
 
 You can find the APK in the `release/` folder, ready to install on Android devices.
 
+---
+
 ## 🛠️ Build
 
 To generate the APK file for Android, follow these steps:
 
-1. Make sure you have all dependencies installed and the project configured properly (API keys, environment variables).
-
-2. Build a production-ready APK using Expo CLI:
-
 ```bash
+# Install dependencies and configure your project properly
+
+# Build APK using Expo CLI (classic build)
 expo build:android -t apk
+
+# OR using EAS Build (recommended)
 eas build -p android --profile production
+```
+
+---
 
 ## 📚 Documentation Reference
 
